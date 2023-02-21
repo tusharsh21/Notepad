@@ -1,10 +1,110 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".UI.Fragments.CreateNoteFragment">
+    tools:context=".UI.Fragments.CreateNoteFragment"
+    android:orientation="vertical">
+
+    <EditText
+        android:padding="10dp"
+        android:id="@+id/et_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:hint="Title"
+        android:background="@drawable/edit_text_background"
+        android:textColorHint="@color/blue"
+        android:layout_margin="16dp"/>
+
+
+    <EditText
+        android:padding="10dp"
+        android:id="@+id/et_note"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textMultiLine"
+        android:textColorHint="@color/blue"
+        android:hint="Start Typing"
+        android:background="@drawable/edit_text_background"
+        android:gravity="top"
+        android:layout_margin="16dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_margin="10dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Priority"
+            android:layout_marginLeft="10dp"
+            android:textSize="20sp"
+            android:textColor="@color/black"
+            android:fontFamily="@font/regular">
+
+        </TextView>
+
+        <ImageView
+            android:layout_width="22dp"
+            android:layout_height="22dp"
+            android:src="@drawable/right_sign"
+            android:background="@drawable/red_shape"
+            android:layout_margin="10dp">
+        </ImageView>
+
+        <ImageView
+            android:layout_width="22dp"
+            android:layout_height="22dp"
+            android:background="@drawable/green_shape"
+            android:layout_margin="5dp">
+        </ImageView>
+
+        <ImageView
+            android:layout_width="22dp"
+            android:layout_height="22dp"
+            android:background="@drawable/yellow_shape"
+            android:layout_margin="5dp">
+        </ImageView>
 
 
 
-</FrameLayout>
+    </LinearLayout>
+
+
+    <EditText
+        android:padding="10dp"
+        android:id="@+id/sub_title"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:inputType="textMultiLine"
+        android:textColorHint="@color/blue"
+        android:background="@drawable/edit_text_background"
+        android:hint="Note"
+        android:gravity="start"
+        android:textSize="20sp"
+        android:layout_margin="16dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="16dp">
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/btndonenote"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:layout_marginStart="322dp"
+            android:backgroundTint="@color/red_color"
+            android:src="@drawable/right_sign" />
+
+
+    </LinearLayout>
+
+
+
+</LinearLayout>
