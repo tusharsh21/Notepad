@@ -7,28 +7,30 @@
     android:orientation="vertical">
 
     <EditText
-        android:padding="10dp"
         android:id="@+id/et_title"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:inputType="textPersonName"
-        android:hint="Title"
+        android:layout_margin="16dp"
         android:background="@drawable/edit_text_background"
-        android:textColorHint="@color/blue"
-        android:layout_margin="16dp"/>
+        android:hint="Title"
+        android:inputType="textPersonName"
+        android:minHeight="48dp"
+        android:padding="10dp"
+        android:textColorHint="@color/blue" />
 
 
     <EditText
-        android:padding="10dp"
-        android:id="@+id/et_note"
+        android:id="@+id/edt_subtitle"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:inputType="textMultiLine"
-        android:textColorHint="@color/blue"
-        android:hint="Start Typing"
+        android:layout_margin="16dp"
         android:background="@drawable/edit_text_background"
         android:gravity="top"
-        android:layout_margin="16dp"/>
+        android:hint="Start Typing"
+        android:inputType="textMultiLine"
+        android:minHeight="48dp"
+        android:padding="10dp"
+        android:textColorHint="@color/blue" />
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -77,7 +79,7 @@
 
     <EditText
         android:padding="10dp"
-        android:id="@+id/sub_title"
+        android:id="@+id/edt_notes"
         android:layout_width="match_parent"
         android:layout_height="300dp"
         android:inputType="textMultiLine"
@@ -97,10 +99,11 @@
             android:id="@+id/btnupdatenote"
             android:layout_width="200dp"
             android:layout_height="wrap_content"
-            android:layout_marginTop="40dp"
             android:layout_marginStart="322dp"
+            android:layout_marginTop="40dp"
             android:backgroundTint="@color/red_color"
-            android:src="@drawable/right_sign" />
+            android:src="@drawable/right_sign"
+            tools:ignore="SpeakableTextPresentCheck" />
 
 
     </LinearLayout>

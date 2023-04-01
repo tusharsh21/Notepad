@@ -21,17 +21,16 @@
             app:layout_constraintTop_toTopOf="parent" />
 
 
-
-
         <com.google.android.material.floatingactionbutton.FloatingActionButton
             android:id="@+id/btnAddNote"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:src="@drawable/ic_baseline_add_24"
             android:layout_margin="25dp"
+            android:src="@drawable/ic_baseline_add_24"
             app:backgroundTint="@color/red_color"
             app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="paren t" />
+            app:layout_constraintEnd_toEndOf="paren t"
+            tools:ignore="SpeakableTextPresentCheck" />
 
 
     </androidx.constraintlayout.widget.ConstraintLayout>
